@@ -1,0 +1,88 @@
+body {
+	font-family: 'Nunito Sans', sans-serif;
+	  margin: 0;
+	  padding: 0;
+	background-color: #c1beb0;
+}
+*{
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+h1{
+	padding-top: 10px;
+	text-align: center;
+	color:#37310f;
+}
+h2{
+	text-align: center;
+	color:#37310f;
+}
+h3{
+	text-align: center;
+	color:darkslategrey;
+}
+.dropdown{
+	margin-left: 780px;
+	margin-top: 17px;
+}
+.icon-bar {
+	width: 100%; /* Full-width */
+	background-color:#34340c; /* Dark-grey background */
+	overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+	float:right; /* Float links side by side */
+	text-align: center; 
+	width: 10%; 
+	padding: 12px 0;
+	transition: all 0.3s ease; 
+	color: white;
+	font-size: 36px; 
+	margin-left: 20px;
+}
+
+.icon-bar a:hover {
+	background-color: #000; /* Add a hover color */
+}
+  
+.active {
+	background-color:#34340c; /* Add an active/current color */
+}
+
+nav h2{
+	color: #fff;
+	text-align: justify;
+	margin-left: 10px;
+}
+nav{
+	display: flex;
+	align-items:flex-end;
+	list-style-type: none;
+	width:100%;
+	padding: 0;
+	background-color:#37310f;
+}
+
+.logo{
+	display: flex;
+	width: 4%;
+	padding: 5px;
+}
+
+table{
+	margin-top: 80px;
+	margin-left: 500px;
+}
+th, td {
+	padding: 15px;
+	text-align: center;
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+.atual{
+	margin-top: 5px;
+	margin-left: 720px;
+}
+
