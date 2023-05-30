@@ -15,7 +15,9 @@ Route::get('/tarefas', function () {
     return view('tarefas');
 })->middleware(['auth']);
 
-
+Route::get('/usuario', function () {
+    return view('usuario');
+})->middleware(['auth']);
 
 
 

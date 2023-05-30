@@ -31,14 +31,15 @@
                             @csrf
                         </form>
                 </a>
-                <a href="/calculo_imc"><i class="fa fa-calculator"></i></a>
+                <a href="http://127.0.0.1:8000/usuario"><i class="fa fa-user"></i></a>
                 <a href="/tarefas"><i class="fa fa-list"></i> </a>
             </div>
         </nav>
     </header>
-    <h1>LISTA DE EXERCIOS</h1>
-    <h2>Lista gerada apartir do seu calculo imc</h2>
-    <h3>Seu imc atual é:</h3>
+    <br><br>
+    <h2>LISTA DE EXERCIOS</h2>
+    <br><br>
+    <h3>IMC ATUAL</h3>
     <table class="atual">
     <tr class="atual">
         <th class="atual">banco__</th>

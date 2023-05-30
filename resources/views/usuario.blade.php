@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./css/calculo_imc.css">
+	<link rel="stylesheet" type="text/css" href="./css/usuario.css">
 </head>
 <body>
     <!-- Add icon library -->
@@ -25,25 +25,12 @@
                 </a>
                 <a href="http://127.0.0.1:8000/usuario"><i class="fa fa-user"></i></a>
                 <a href="http://127.0.0.1:8000/tarefas"><i class="fa fa-list"></i></a>
+                
             </div>
         </nav>
     </header>
-    <h1>CALCULO IMC ATUAL</h1>
-    <table>
-    <tr>
-        <th>idade</th>
-        <th>altura</th>
-        <th>peso</th>
-        <th>formula</th>
-        <th>peso ideal</th>
-    </tr>
-    <tr>
-        <td>banco</td>
-        <td>banco____</td>
-        <td>banco____</td>
-        <td>PESO/ALTURA X ALTURA</td>
-        <td>banco________</td>
-    </tr>
-    </table>
+    <a href=""><button type="submit">Meus Dados</button></a> 
+    <a href=""><button type="submit">Historico completo</button></a>
+    <a href="http://127.0.0.1:8000/tarefas"><button type="submit">calcular novo imc</button></a>
 </body>
 </html>
