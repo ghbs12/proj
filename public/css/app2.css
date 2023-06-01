@@ -1,0 +1,45 @@
+
+nav h2{
+	color: #fff;
+	text-align: justify;
+	margin-left: 10px;
+}
+nav{
+	display: flex;
+	align-items:center;
+    justify-content: space-between;
+	list-style-type: none;
+    height: 60px;
+	width:100%;
+	padding: 0;
+	background-color:#37310f;
+    padding: 0 60px 0 60px;
+}
+.baiano{
+    display: flex;
+    flex-direction: row;
+}
+.botao-baiano{
+    background-color: #37310f !important;
+    margin-left: 20px;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+nav a {
+	height: 100%;
+	color: white;
+	font-size: 26px; 
+}
+nav i {
+	color: white;
+	font-size: 26px; 
+	
+}
+
+.logo{
+    height: 50px;
+}
+
