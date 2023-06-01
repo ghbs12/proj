@@ -29,6 +29,7 @@
             </div>
         </nav>
     </header>
+
     <a href=""><button type="submit">Meus Dados</button></a> 
     <a href=""><button type="submit">Historico completo</button></a>
     <a href="http://127.0.0.1:8000/calculo_imc"><button type="submit">calcular novo imc</button></a>
