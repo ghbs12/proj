@@ -10,7 +10,7 @@ class Exercicio extends Model
     use HasFactory;
     protected $fillable = [
         'nome',
-        'desc'
-        
+        'desc',
+        'local'
     ];
 }

@@ -1,13 +1,12 @@
 @extends('layouts.app2')
 
 @section('content')
-
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="./css/calculo_imc.css">
+	<link rel="stylesheet" type="text/css" href="./css/calculo_imc.css">
 </head>
-<body>
+ <body>
     <h1>CALCULO IMC ATUAL</h1>
     <table>
     <tr>
