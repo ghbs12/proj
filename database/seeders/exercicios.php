@@ -14,19 +14,19 @@ class exercicios extends Seeder
     public function run()
     {
         DB::table('exercicios')->insert([
-            'nome' => "",
-            'desc' => "",
-            'local' => "",
+            'nome' => "alongamento",
+            'desc' => "Alongue seu corpo",
+            'local' => "A onde preferir",
             'tipo_id' => "1"
         ]); 
         DB::table('exercicios')->insert([
-            'nome' => "",
-            'desc' => "",
-            'local' => "",
+            'nome' => "Crunch abdominal",
+            'desc' => "Deite-se de costas, dobre os joelhos e coloque os pés no chão",
+            'local' => "A onde preferir",
             'tipo_id' => "1"
         ]); 
         DB::table('exercicios')->insert([
-            'nome' => "",
+            'nome' => "agachamento",
             'desc' => "",
             'local' => "",
             'tipo_id' => "1"

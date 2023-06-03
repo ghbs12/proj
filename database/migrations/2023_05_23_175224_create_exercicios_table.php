@@ -16,8 +16,8 @@ class CreateExerciciosTable extends Migration
         Schema::create('exercicios', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
-            $table->string('desc');
-            $table->string('local');
+            $table->longtext('desc');
+            $table->longtext('local');
             $table->foreign('tipo_id')->references('id')->on('tipos');
             $table->timestamps();
         });
