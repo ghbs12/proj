@@ -21,6 +21,7 @@ class CreateExerciciosTable extends Migration
             $table->foreign('tipo_id')->references('id')->on('tipos');
             $table->timestamps();
         });
+        
     }
 
     /**
