@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateExerciciosTable extends Migration
+class CreateModelImcsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,13 @@ class CreateExerciciosTable extends Migration
      */
     public function up()
     {
-        Schema::create('exercicios', function (Blueprint $table) {
+        Schema::create('imcs', function (Blueprint $table) {
             $table->id();
-            $table->string('nome');
-            $table->longtext('desc');
-            $table->longtext('local');
-            $table->unsignedBigInteger('faixa_id');
-            $table->foreign('faixa_id')->references('id')->on('faixas')->onDelete('cascade');
+            $table->decimal('valor', 5, 2);
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
-        
     }
 
     /**
@@ -32,6 +29,6 @@ class CreateExerciciosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('exercicios');
+        Schema::dropIfExists('imcs');
     }
 }

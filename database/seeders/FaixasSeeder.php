@@ -3,21 +3,21 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Tipo;
+use App\Models\Faixa;
 use Illuminate\Support\Facades\DB;
 
-class Tipos extends Seeder
+class FaixasSeeder extends Seeder
 {
 
     public function run()
     {
-        DB::table('tipos')->insert([
+        DB::table('faixas')->insert([
             'nome' => "acima"
         ]); 
-        DB::table('tipos')->insert([
+        DB::table('faixas')->insert([
             'nome' => "abaixo"
         ]);   
-        DB::table('tipos')->insert([
+        DB::table('faixas')->insert([
             'nome' => "dentro"
         ]);     
     }

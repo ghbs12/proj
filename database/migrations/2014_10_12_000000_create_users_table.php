@@ -21,10 +21,12 @@ class CreateUsersTable extends Migration
             $table->date('nascimento');
             $table->decimal('altura', 5, 2);
             $table->decimal('peso', 5, 2);
-            $table->decimal('imc', 5, 2);
+            $table->decimal('imc_atual', 5, 2);
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
+            $table->unsignedBigInteger('faixa_id');
+            $table->foreign('faixa_id')->references('id')->on('faixas')->onDelete('cascade');
             $table->timestamps();
         });
     }
