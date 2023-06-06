@@ -8,18 +8,7 @@ body{
 h1{
     text-align: center;
 }
-h2{
-    text-align: center;
-}
-
-.atual{
-	margin-left: auto;
-	margin-right: auto;
-	border-collapse: collapse;
-    width: 15%;
-}
-
-.exercicios {
+table {
     border-collapse: collapse;
     width: 100%;
 }

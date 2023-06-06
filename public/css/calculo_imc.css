@@ -1,55 +1,44 @@
-body{
-    font-family: 'Nunito Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #c1beb0;
-}
-*{
+body {
 	font-family: 'Nunito Sans', sans-serif;
-}
-h1{
-    text-align: center;
-    margin-top: 30px;
-    color:#37310f;
-}
-
-.icon-bar {
-	width: 100%; 
-	background-color:#37310f;
-	overflow: auto;
+	margin: 0;
+	padding: 0;
+	background-color: #c1beb0;
 }
   
-.icon-bar a {
-	float:right; 
-	text-align: center; 
-	width: 10%; 
-	padding: 12px 0;
-	transition: all 0.3s ease; 
-	color: white;
-	font-size: 36px; 
-	margin-left: 20px;
-}
-
-.icon-bar a:hover {
-	background-color: #000; 
+.container {
+	width: 300px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color:  #37310f;
+	color: wheat ;
+	border-radius: 5px;
 }
   
-.active {
-	background-color:#37310f;
-}
-
-
-
-
-table{
-	margin-top: 80px;
-	margin-left: 450px;
-}
-th, td {
-	padding: 15px;
+h1 {
 	text-align: center;
-	border: 2px solid black;
-	border-collapse: collapse;
 }
-
-
+  
+label {
+	font-weight: bold;
+}
+  
+input[type="number"] {
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+  
+button {
+	width: 100%;
+	padding: 10px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+  
+.result {
+	margin-top: 20px;
+	text-align: center;
+}

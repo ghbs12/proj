@@ -8,27 +8,40 @@
     <link rel="stylesheet" type="text/css" href="./css/tarefas.css">
 </head>
 <body>
-    <br><br>
-    <h2>LISTA DE EXERCIOS</h2>
-    <br><br>
-    <h3>IMC ATUAL</h3>
-    <table class="atual">
-    <tr class="atual">
-        <th class="atual">banco__</th>
-    </tr>
-    </table>
-    <table>
-    <tr>
-        <th>ID</th>
-        <th>EXERCICIOS</th>
-    </tr>
-    <tr>
-        <td>banco</td>
-        <td>banco__________________________________________</td>
-    </tr>
-    </table>
+    <div class="container">
 
+        <br><br>
+        <h2>IMC ATUAL</h2>
+        <br>
+
+        <table class= atual>
+            <tr>
+                <th>banco</th>
+            </tr>
+        </table>
+
+        <br><br><br><br>
+        <h1>LISTA DE EXERCIOS</h1>
+        <br><br>
+
+        <table class= exercicios>
+            <tr>
+                <th>ID Exercicios</th>
+                <th>Nome Exercicios</th>
+                <th>Descrição Exercicios</th>
+                <th>Data inicio</th>
+                <th>Data final</th>
+
+            </tr>
+            <tr>
+                <td>banco</td>
+                <td>banco</td>
+                <td>banco</td>
+                <td>banco</td>
+                <td>banco</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
 @endsection
-

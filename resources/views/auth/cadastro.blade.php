@@ -38,17 +38,6 @@
             </div>
         </div>
 
-        <div class="form-group w-75">
-        <label for="endereco">{{ __('ENDEREÇO') }}</label>
-            <div >
-                <input id="endereco" type="text" class="form-control @error('endereco') is-invalid @enderror" name="endereco" value="{{ old('endereco') }}" required autocomplete="endereco"placeholder="Exemplo Rua.... - Numero ....">
-                @error('endereco')
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $message }}</strong>
-                    </span>
-                @enderror
-            </div>
-        </div>
 
         <div class="form-group w-75">
         <label for="cpf">{{ __('CPF') }}</label>
@@ -67,30 +56,6 @@
             <div >
                 <input id="nascimento" type="text" class="form-control @error('nascimento') is-invalid @enderror" name="nascimento" value="{{ old('nascimento') }}" required autocomplete="nascimento"placeholder="ano/mes/dia"onkeypress="$(this).mask('0000/00/00')">
                 @error('nascimento')
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $message }}</strong>
-                    </span>
-                @enderror
-            </div>
-        </div>
-
-        <div class="form-group w-75">
-        <label for="telefone">{{ __('TELEFONE') }}</label>
-            <div >
-                <input id="telefone" type="text" class="form-control @error('telefone') is-invalid @enderror" name="telefone" value="{{ old('telefone') }}" required autocomplete="telefone"placeholder="Exemplo ddd com 3 digitos + 9 digitos "onkeypress="$(this).mask('000000000000')">
-                @error('telefone')
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $message }}</strong>
-                    </span>
-                @enderror
-            </div>
-        </div>
-
-        <div class="form-group w-75">
-        <label for="cep">{{ __('CEP') }}</label>
-            <div >
-                <input id="cep" type="text" class="form-control @error('cep') is-invalid @enderror" name="cep" value="{{ old('cep') }}" required autocomplete="telefone"placeholder="Exemplo 00000000"onkeypress="$(this).mask('00000000')">
-                @error('cep')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
                     </span>

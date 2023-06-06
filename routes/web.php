@@ -19,6 +19,10 @@ Route::get('/usuario', function () {
     return view('usuario');
 })->middleware(['auth']);
 
+Route::get('historico', function () {
+    return view('historico');
+})->middleware(['auth']);
+
 
 
 Route::get('/loginAdmin', 'App\Http\Controllers\Auth\LoginController@showAdminLoginForm');
