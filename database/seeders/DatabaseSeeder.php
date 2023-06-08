@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             FaixasSeeder::class,
             ExerciciosSeeder::class,
-            imcSeeder::class,
+            ImcSeeder::class,
         ]);
     }
 }

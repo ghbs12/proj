@@ -49,6 +49,16 @@ class RegisterController extends Controller
     {   
         $altura = $data ['altura'];
         $peso = $data['peso'];
+        $imc = $peso / ($altura * $altura);
+        $faixa_id = 0;
+        if ($imc < 18.5) {
+            $faixa_id = 2;
+          } else if ($imc < 25) {
+            $faixa_id = 3;
+          } else {
+            $faixa_id = 1;
+          } 
+
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
@@ -56,7 +66,8 @@ class RegisterController extends Controller
             'nascimento' => $data['nascimento'],
             'altura' => $data['altura'],
             'peso' => $data['peso'],
-            'imc'=> $peso / ($altura * $altura),
+            'imc_atual'=> $imc,
+            'faixa_id' => $faixa_id,
             'password' => Hash::make($data['password'])
         ]);
     }

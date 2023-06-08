@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Model_imc extends Model
+class imc extends Model
 {
     use HasFactory;
      /**
@@ -14,7 +14,8 @@ class Model_imc extends Model
      * @var array
      */
     protected $fillable = [
-        'valor'
+        'valor',
+        'user_id'
     ];
 }
 

@@ -2,27 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
-
+use App\Models\User;
+use App\Models\Exercicio;
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
+    
     public function __construct()
     {
         $this->middleware('auth');
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
+   
     public function index()
     {
-        return view('tarefas');
+        $faixa_id = Auth::user()-> faixa_id;
+        $exercicios = Exercicio::all()->where('faixa_id', $faixa_id);
+        return view('tarefas',compact('exercicios'));
     }
 }

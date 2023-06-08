@@ -24,14 +24,13 @@ class CreateUsersTable extends Migration
             $table->decimal('imc_atual', 5, 2);
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->rememberToken();
             $table->unsignedBigInteger('faixa_id');
             $table->foreign('faixa_id')->references('id')->on('faixas')->onDelete('cascade');
+            $table->rememberToken();
             $table->timestamps();
         });
     }
-
-    /**
+       /**
      * Reverse the migrations.
      *
      * @return void

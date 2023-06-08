@@ -26,7 +26,7 @@
                 <h2>SuperAÇÃO</h2>
             </div>
             <div class="baiano">
-                <a href="/tarefas"><i class="fa fa-list"></i> </a>
+                <a href="/home"><i class="fa fa-list"></i> </a>
                 <div class="dropdown">
                     <button class="btn btn-dark dropdown-toggle botao-baiano" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-user"></i>

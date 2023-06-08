@@ -9,20 +9,24 @@
 </head>
  <body>
     <br><br><br><br>
- <div class="container">
-    <h1>Calculadora de IMC</h1>
-    
-    <label for="weight">Peso (kg):</label>
-    <input type="number" id="weight">
-    
-    <label for="height">Altura (cm):</label>
-    <input type="number" id="height">
-    
-    <button onclick="calculateBMI()">Calcular IMC</button>
-    
-    <div class="result" id="result"></div>
-  </div>
+    <form method="POST"enctype="multipart/form-data" action="{{route('calculo_imc.store')}}">
+      @csrf
+      @method('POST')
+      <div class="container">
+         <h1>Calculadora de IMC</h1>
+         
+         <label for="weight">Peso (kg):</label>
+         <input name = "peso" type="number" id="peso">
+         
+         <label for="height">Altura (cm):</label>
+         <input name = "altura" type="number" id="altura">
+         
+         <button type = "submit"> Calcular IMC </button>
+         
+         <div class="result" id="result">{{$imc}}</div>
+      </div>
+    </form>
+ 
 </body>
-<script src="../js/calculo_imc.js"></script>
 </html>
 @endsection

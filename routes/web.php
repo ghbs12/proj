@@ -7,13 +7,11 @@ Route::get('/', function () {
     return view('inicio');
 });
 
-Route::get('/calculo_imc', function () {
-    return view('calculo_imc');
-})->middleware(['auth']);
+Route::resource('/calculo_imc','App\Http\Controllers\CalculadoraController');
 
-Route::get('/tarefas', function () {
-    return view('tarefas');
-})->middleware(['auth']);
+
+Route::get('/home','App\Http\Controllers\HomeController@index');
+
 
 Route::get('/usuario', function () {
     return view('usuario');
@@ -33,5 +31,4 @@ Route::post('registerAdmin', ['as' => 'registerAdmin', 'uses' =>'App\Http\Contro
 
 
 Auth::routes();
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('homeAdmin', ['as' => 'homeAdmin', 'uses' => 'App\Http\Controllers\HomeAdminController@index']);
+

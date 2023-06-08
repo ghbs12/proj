@@ -16,7 +16,7 @@
 
         <table class= atual>
             <tr>
-                <th>banco</th>
+                <th>{{Auth::user()->imc_atual}}</th>
             </tr>
         </table>
 
@@ -29,17 +29,14 @@
                 <th>ID Exercicios</th>
                 <th>Nome Exercicios</th>
                 <th>Descrição Exercicios</th>
-                <th>Data inicio</th>
-                <th>Data final</th>
-
             </tr>
+            @foreach($exercicios as $exercicio)
             <tr>
-                <td>banco</td>
-                <td>banco</td>
-                <td>banco</td>
-                <td>banco</td>
-                <td>banco</td>
+                <td>{{$exercicio['id']}}</td>
+                <td>{{$exercicio['nome']}}</td>
+                <td>{{$exercicio['desc']}}</td>
             </tr>
+            @endforeach
         </table>
     </div>
 </body>

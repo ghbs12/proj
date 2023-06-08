@@ -26,7 +26,8 @@ class User extends Authenticatable
         'cep',
         'altura',
         'peso',
-        'imc',
+        'imc_atual',
+        'faixa_id',
         'password'
     ];
 

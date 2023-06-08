@@ -7,9 +7,9 @@ function calculateBMI() {
       return;
     }
     
-    height = height / 100; // Convert height to meters
+    height = height / 100; 
     var bmi = weight / (height * height);
-    bmi = bmi.toFixed(2); // Round to 2 decimal places
+    bmi = bmi.toFixed(2); 
     
     var category;
     if (bmi < 18.5) {
