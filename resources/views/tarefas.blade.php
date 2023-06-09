@@ -29,12 +29,14 @@
                 <th>ID Exercicios</th>
                 <th>Nome Exercicios</th>
                 <th>Descrição Exercicios</th>
+                <th>Local</th>
             </tr>
             @foreach($exercicios as $exercicio)
             <tr>
                 <td>{{$exercicio['id']}}</td>
                 <td>{{$exercicio['nome']}}</td>
                 <td>{{$exercicio['desc']}}</td>
+                <td>{{$exercicio['local']}}</td>
             </tr>
             @endforeach
         </table>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Models\User;
+use App\Models\imc;
 use App\Models\Admin;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
@@ -59,7 +60,7 @@ class RegisterController extends Controller
             $faixa_id = 1;
           } 
 
-        return User::create([
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'cpf' => $data['cpf'],
@@ -70,6 +71,13 @@ class RegisterController extends Controller
             'faixa_id' => $faixa_id,
             'password' => Hash::make($data['password'])
         ]);
+        imc::create([
+            'valor' => $imc,
+            'peso' => $peso,
+            'altura' => $altura,
+            'user_id' => $user-> id,
+        ]);
+        return $user;
     }
     protected function createAdmin(Request $request)
     {

@@ -15,6 +15,8 @@ class imc extends Model
      */
     protected $fillable = [
         'valor',
+        'altura',
+        'peso',
         'user_id'
     ];
 }

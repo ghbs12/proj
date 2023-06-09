@@ -32,7 +32,6 @@
                         <i class="fa fa-user"></i>
                     </button>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="http://127.0.0.1:8000/usuario">Meus dados</a>
                         <a class="dropdown-item" href="http://127.0.0.1:8000/historico">historico</a>
                         <a class="dropdown-item" href="http://127.0.0.1:8000/calculo_imc">calcular novo imc</a>
                         <a class="dropdown-item" href="#" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Sair</a>

@@ -28,7 +28,7 @@ class CalculadoraController extends Controller
     public function store(Request $request)
     {
         $user = User::findOrFail(Auth::user()-> id);
-        $altura =$request->get('altura')/100;
+        $altura =$request->get('altura');
         $peso = $request->get('peso');
         $imc = $peso / ($altura * $altura);
         $faixa_id = 0;
@@ -46,6 +46,8 @@ class CalculadoraController extends Controller
 
         imc::create([
             'valor' => $imc,
+            'peso' => $peso,
+            'altura' => $altura,
             'user_id' => Auth::user()-> id,
         ]);
         return view ('calculo_imc',compact("imc"));

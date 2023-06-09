@@ -16,6 +16,8 @@ class CreateImcsTable extends Migration
         Schema::create('imcs', function (Blueprint $table) {
             $table->id();
             $table->decimal('valor', 5, 2);
+            $table->decimal('peso', 5, 2);
+            $table->decimal('altura', 5, 2);
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();

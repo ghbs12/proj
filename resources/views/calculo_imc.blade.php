@@ -19,7 +19,7 @@
          <input name = "peso" type="number" id="peso">
          
          <label for="height">Altura (cm):</label>
-         <input name = "altura" type="number" id="altura">
+         <input name = "altura" type="number" step="any"  id="altura">
          
          <button type = "submit"> Calcular IMC </button>
          

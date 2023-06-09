@@ -12,14 +12,9 @@ Route::resource('/calculo_imc','App\Http\Controllers\CalculadoraController');
 
 Route::get('/home','App\Http\Controllers\HomeController@index');
 
+Route::get('/historico','App\Http\Controllers\HistoricoController@index');
 
-Route::get('/usuario', function () {
-    return view('usuario');
-})->middleware(['auth']);
 
-Route::get('historico', function () {
-    return view('historico');
-})->middleware(['auth']);
 
 
 

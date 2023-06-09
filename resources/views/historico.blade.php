@@ -13,23 +13,21 @@
         <br><br>
         <table id="imc-table">
             <tr>
-                <th>ID</th>
-                <th>usuario</th>
-                <th>Data Inicial</th>
-                <th>Data Final</th>
+                <th>id</th>
+                <th>IMC</th>
                 <th>Peso</th>
                 <th>Altura</th>
-                <th>IMC</th>
+                <th>Data Inicial</th>
             </tr>
+            @foreach($imcs as $imc)
             <tr>
-                <td>banco</td>
-                <td>banco</td>
-                <td>banco</td>
-                <td>banco</td>
-                <td>banco</td>
-                <td>banco</td>
-                <td>banco</td>
+                <td>{{$imc['id']}}</td>
+                <td>{{$imc['valor']}}</td>
+                <td>{{$imc['peso']}}</td>
+                <td>{{$imc['altura']}}</td>
+                <td>{{date('d/m/Y', strtotime($imc['created_at']))}}</td>
             </tr>
+            @endforeach
         </table>
     </div>
 
