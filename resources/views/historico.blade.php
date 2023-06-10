@@ -15,6 +15,7 @@
             <tr>
                 <th>id</th>
                 <th>IMC</th>
+                <th>Faixa</th>
                 <th>Peso</th>
                 <th>Altura</th>
                 <th>Data Inicial</th>
@@ -22,6 +23,7 @@
             @foreach($imcs as $imc)
             <tr>
                 <td>{{$imc['id']}}</td>
+                <td>{{$imc['valor']}}</td>
                 <td>{{$imc['valor']}}</td>
                 <td>{{$imc['peso']}}</td>
                 <td>{{$imc['altura']}}</td>

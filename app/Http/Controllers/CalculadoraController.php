@@ -28,7 +28,7 @@ class CalculadoraController extends Controller
     public function store(Request $request)
     {
         $user = User::findOrFail(Auth::user()-> id);
-        $altura =$request->get('altura');
+        $altura =$request->get('altura')/100;
         $peso = $request->get('peso');
         $imc = $peso / ($altura * $altura);
         $faixa_id = 0;
