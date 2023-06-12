@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\imc;
 use App\Models\User;
 use Illuminate\Http\Request;
-
+use App\Models\Faixa;
 class CalculadoraController extends Controller
 {
     public function __construct()
@@ -16,7 +16,8 @@ class CalculadoraController extends Controller
     public function index()
     {
         $imc = "";
-        return view ('calculo_imc',compact("imc"));
+        $faixa = "";
+        return view ('calculo_imc',compact("imc", "faixa"));
     }
 
     public function create()
@@ -42,15 +43,16 @@ class CalculadoraController extends Controller
         $user-> imc_atual = $imc;
         $user-> faixa_id = $faixa_id;
         $user->save();
-
-
+        $faixa = Faixa::findOrFail($faixa_id);
+        $faixa = $faixa->nome;
         imc::create([
             'valor' => $imc,
             'peso' => $peso,
             'altura' => $altura,
             'user_id' => Auth::user()-> id,
+            'faixa_id' => $faixa_id
         ]);
-        return view ('calculo_imc',compact("imc"));
+        return view ('calculo_imc',compact("imc", "faixa"));
     }
 
 

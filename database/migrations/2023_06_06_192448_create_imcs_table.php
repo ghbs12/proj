@@ -20,6 +20,8 @@ class CreateImcsTable extends Migration
             $table->decimal('altura', 5, 2);
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
+            $table->unsignedBigInteger('faixa_id');
+            $table->foreign('faixa_id')->references('id')->on('faixas');
             $table->timestamps();
         });
     }

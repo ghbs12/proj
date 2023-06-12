@@ -76,6 +76,7 @@ class RegisterController extends Controller
             'peso' => $peso,
             'altura' => $altura,
             'user_id' => $user-> id,
+            'faixa_id' => $faixa_id
         ]);
         return $user;
     }

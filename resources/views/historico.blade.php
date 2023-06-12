@@ -13,7 +13,6 @@
         <br><br>
         <table id="imc-table">
             <tr>
-                <th>id</th>
                 <th>IMC</th>
                 <th>Faixa</th>
                 <th>Peso</th>
@@ -22,9 +21,8 @@
             </tr>
             @foreach($imcs as $imc)
             <tr>
-                <td>{{$imc['id']}}</td>
                 <td>{{$imc['valor']}}</td>
-                <td>{{$imc['valor']}}</td>
+                <td>{{$imc['nome']}}</td>
                 <td>{{$imc['peso']}}</td>
                 <td>{{$imc['altura']}}</td>
                 <td>{{date('d/m/Y', strtotime($imc['created_at']))}}</td>

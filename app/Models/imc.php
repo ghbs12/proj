@@ -17,7 +17,8 @@ class imc extends Model
         'valor',
         'altura',
         'peso',
-        'user_id'
+        'user_id',
+        'faixa_id'
     ];
 }
 

@@ -17,6 +17,7 @@
         <table class= atual>
             <tr>
                 <th>{{Auth::user()->imc_atual}}</th>
+                <th>{{$faixa["nome"]}}</th>
             </tr>
         </table>
 

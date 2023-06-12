@@ -23,7 +23,7 @@
          
          <button type = "submit"> Calcular IMC </button>
          
-         <div class="result" id="result">{{$imc}}</div>
+         <div class="result" id="result">{{$imc}} {{$faixa}}</div>
       </div>
     </form>
  
