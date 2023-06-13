@@ -17,7 +17,7 @@ class CreateContatosTable extends Migration
             $table->id();
             $table->string('nome');
             $table->string('email');
-            $table->longtext('texto');
+            $table->longtext('mensagem');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
@@ -31,5 +31,6 @@ class CreateContatosTable extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('contatos');
     }
 }

@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class imc extends Model
+class Contato extends Model
 {
     use HasFactory;
      /**
@@ -16,7 +16,7 @@ class imc extends Model
     protected $fillable = [
         'nome',
         'email',
-        'texto', 
+        'mensagem', 
         'user_id',
     ];
 }

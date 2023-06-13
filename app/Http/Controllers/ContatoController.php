@@ -11,14 +11,12 @@ class CalculadoraController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
+        //
     }
 
     public function index()
     {
-        $imc = "";
-        $faixa = "";
-        return view ('calculo_imc',compact("imc", "faixa"));
+        //
     }
 
     public function create()
@@ -32,10 +30,10 @@ class CalculadoraController extends Controller
         Contato::create([
             'nome' => $nome,
             'email' => $email,
-            'texto' => $texto,
+            'mensagem' => $mensagem,
             'user_id' => Auth::user()-> id,
         ]);
-        return view ('calculo_imc',compact("imc", "faixa"));
+        return view ('contatos',compact(""));
     }
 
 
