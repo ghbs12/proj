@@ -22,7 +22,6 @@ class CreateExerciciosTable extends Migration
             $table->foreign('faixa_id')->references('id')->on('faixas')->onDelete('cascade');
             $table->timestamps();
         });
-        
     }
 
     /**

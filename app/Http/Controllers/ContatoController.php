@@ -7,7 +7,8 @@ use App\Models\User;
 use App\Models\Contato;
 use Illuminate\Http\Request;
 use App\Models\Faixa;
-class CalculadoraController extends Controller
+
+class ContatoController extends Controller
 {
     public function __construct()
     {
@@ -16,7 +17,8 @@ class CalculadoraController extends Controller
 
     public function index()
     {
-        //
+        $dados = "";
+        return view('contatos',compact("dados"));
     }
 
     public function create()
@@ -28,12 +30,14 @@ class CalculadoraController extends Controller
     public function store(Request $request)
     {
         Contato::create([
-            'nome' => $nome,
-            'email' => $email,
-            'mensagem' => $mensagem,
-            'user_id' => Auth::user()-> id,
+            'nome' => $request->get('nome'),
+            'email' => $request->get('email'),
+            'mensagem' => $request->get('mensagem'),
         ]);
-        return view ('contatos',compact(""));
+
+        $dados = "ok";
+
+        return view ('contatos',compact("dados"));
     }
 
 

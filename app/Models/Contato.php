@@ -17,6 +17,5 @@ class Contato extends Model
         'nome',
         'email',
         'mensagem', 
-        'user_id',
     ];
 }
