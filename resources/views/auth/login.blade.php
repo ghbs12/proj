@@ -20,7 +20,6 @@
                 <input  id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                 <label for="password">Senha:</label>
                 <input type="password" id="password" name="password">
-                <a class="esqsenha"href="http://127.0.0.1:8000/verify">esqueci minha senha</a>
                 <br>
                 <div class="botao">
                     <a class="entrar"href="http://127.0.0.1:8000/tarefas"><button type="submit">Entrar</button></a>
