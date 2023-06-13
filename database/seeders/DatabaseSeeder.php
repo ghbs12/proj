@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             FaixasSeeder::class,
             ExerciciosSeeder::class,
             ImcSeeder::class,
+            ContatosSeeder::class,
         ]);
     }
 }

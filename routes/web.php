@@ -7,6 +7,10 @@ Route::get('/', function () {
     return view('inicio');
 });
 
+Route::get('/contatos', function () {
+    return view('contatos');
+});
+
 Route::resource('/calculo_imc','App\Http\Controllers\CalculadoraController');
 
 

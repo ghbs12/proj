@@ -32,8 +32,7 @@
 
 			<ul>
 				<li><a href="http://127.0.0.1:8000">Início</a></li>
-				<li><a href="#">Sobre</a></li>
-				<li><a href="#">Contato</a></li>
+				<li><a href="http://127.0.0.1:8000/contatos">Contato</a></li>
 			</ul>
 		</nav>
 	</header>
